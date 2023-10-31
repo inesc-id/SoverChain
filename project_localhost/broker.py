@@ -315,7 +315,7 @@ async def run():
         else:
             print("Invalid option")
 
-        await asyncio.sleep(0.1) # This is needed to avoid blocking the event loop
+        await asyncio.sleep(0.1) 
 
 
 if __name__ == '__main__':

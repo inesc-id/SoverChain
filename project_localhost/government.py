@@ -96,8 +96,7 @@ async def check_available_connections():
     print("GET connections?state=active -> " + connections.text)
 
 async def issue_credential(json_send_offer):
-    #automate all the flow, stores credential on holder waller
-    #No need to send more for now
+    #automated the flow, stores credential on holder wallet
     print("---  SEND CREDENTIAL -------")
     send_offer = requests.post("http://localhost:9021/issue-credential-2.0/send", json=json_send_offer)
     #print("POST issue-credential2.0/send/(json) -> " + send_offer.text)
@@ -274,8 +273,9 @@ async def run():
     # Starting Steward Agent
     # --------------------------------------------------------------------------
 
-    # if test: --auto-respond-credential-proposal
+    # if testing add: --auto-respond-credential-proposal
     # --log-level info --log-file log_info.txt (write agent logs to file)
+
     title = f"Governament  Agent (Issuer)"
     command = f"bash -c 'cd /home/brunopc/Documents/SOVERE_Prototype/final_version/aries-cloudagent-python-main && aca-py start --inbound-transport http 0.0.0.0 9020 --outbound-transport http --admin-insecure-mode --admin 0.0.0.0 9021 --seed 000000000000000000000000Stewar33 --trace-target log --trace-tag acapy.events --log-level info --replace-public-did --wallet-type indy --genesis-url http://localhost:9000/genesis --webhook-url http://localhost:9002/webhooks --auto-provision --wallet-name theGovernament_wallet --wallet-key theGovernament_wallet_key --auto-accept-invites --auto-accept-requests --auto-ping-connection --auto-respond-credential-request --label Governament.Agent -e http://localhost:9020 --debug-connection --debug-credentials; $SHELL'"	
     subprocess.Popen(['gnome-terminal', '--window', '--title', title, '--command', command])

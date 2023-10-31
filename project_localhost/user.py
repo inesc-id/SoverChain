@@ -140,6 +140,15 @@ def issue_credential_ld_proof():
 
     return 'Webhook received and processed successfully', 200
 
+#****************************************************
+# Gov create invitation steps:
+#0 start
+#1 receive invitation
+#2 request connection
+#3 response invitation
+#4 accept invitation
+# ****************************************************
+
 @app.route('/webhooks/topic/connections/', methods=['POST'])
 def connections():
     event = request.json
@@ -148,12 +157,6 @@ def connections():
     state = event['state']
 
     if debug: print("Event state: " + state)
-    # gov create invitation
-    #0 start
-    #1 receive invitation
-    #2 request connection
-    #3 response invitation
-    #4 accept invitation
 
     if state == "active":
         print("=== Connection Active ===")
@@ -283,26 +286,6 @@ def check_input_descriptor_record_id(input_descriptor_schema_uri, record) -> boo
         return result
 
 
-
-# async def delete_credentials():
-#     check_credentials = requests.get('http://localhost:8003/issue-credential-2.0/records')
-#     print("GET issue-credential-2.0/records-> " + check_credentials.text)
-
-#     for loop and print all ccred_ex_id
-#     json_data = json.loads(check_credentials.text)['results']
-#     for i in json_data:
-#         print("----------------")
-#         cred_ex_id = str(i['cred_ex_record']['cred_ex_id'])
-#         print("cred_ex_id-> " + cred_ex_id)
-#         print("----------------")
-
-#         Delete cred def in wallet
-#         dleted = requests.delete('http://localhost:8003/issue-credential-2.0/records/' + cred_ex_id )
-#         print("DELETED -> " + dleted.text)
-#         check_credentials = requests.get('http://localhost:8003/issue-credential-2.0/records')
-#     print("GET issue-credential-2.0/records-> " + check_credentials.text)
-#     pass
-
 async def create_json_log(event_type,cred_type,user_did, other_did, timestamp ):
     data = {
             "event_type": event_type,
@@ -316,7 +299,6 @@ async def create_json_log(event_type,cred_type,user_did, other_did, timestamp ):
 
 async def get_credentials_w3c( did_governament_bbs):
     # Get all my credentials
-
     data = {
                 "@context": [
                                     "https://www.w3.org/2018/credentials/v1",
@@ -1040,7 +1022,7 @@ async def run():
                 "audit_log": decrypted_data,
                 "did": did_user_bbs,
             }
-            #TODO mudar para ser pelo DIDCOm
+            #can be DIDComm
             website_url = "http://localhost:9002" + "/receive_audit_log"
             response = requests.post(website_url, json=json_data)
 
