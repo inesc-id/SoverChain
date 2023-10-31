@@ -1,0 +1,31 @@
+{
+    "created_at":"2023-10-01T15:20:04.778277Z",
+    "updated_at":"2023-10-01T15:20:04.778277Z",
+    "role":"prover",
+    "initiator":"external",
+    "thread_id":"6c937441-d057-440d-91ce-6111ac46aec9",
+    "by_format":{
+       "pres_request":{
+             "presentation_definition":{
+                "id":"32f54163-7166-48f1-93d8-ff217bdb0654",
+                "format":{
+                   "ldp_vp":{
+                      "proof_type":[
+                         "BbsBlsSignature2020"
+                      ]
+                   }
+                },
+                "input_descriptors":[ // Presentation request
+                ]
+             }
+          }
+       }
+    },
+    "trace":false,
+    "state":"request-received",
+    "connection_id":"adedb758-bad7-4dcb-a0f2-12c50a03ac29",
+    "pres_ex_id":"6cc74824-6577-4636-9c51-980fbf8386f6",
+    "auto_verify":false,
+    "pres_request":{ // Presentation request
+    }
+ }

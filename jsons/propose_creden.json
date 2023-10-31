@@ -1,0 +1,50 @@
+{
+    "connection_id":"con_id_governament",
+    "comment":"Credential proposal for identity documents: + URL",
+    "filter":{
+       "ld_proof":{
+          "credential":{
+             "@context":[
+                "https://www.w3.org/2018/credentials/v1",
+                "https://w3id.org/citizenship/v1",
+                {
+                   "isAbove18":{
+                      "@id":"https://example.com/definitions#isAbove18",
+                      "@type":"http://www.w3.org/2001/XMLSchema#boolean"
+                   },
+                   "givenName":"schema:givenName",
+                   "familyName":"schema:familyName",
+                   "gender":"schema:gender",
+                   "birthCountry":"schema:birthCountry",
+                   "birthDate":"schema:birthDate"
+                }
+             ],
+             "type":[
+                "VerifiableCredential",
+                "PermanentResident"
+             ],
+             "id":"https://credential.example.com/residents/aaaa",
+             "issuer":"did_governament_bbs",
+             "issuanceDate":"2020-01-01T12:00:00Z",
+             "credentialSubject":{
+                "id":"did_user_bbs",
+                "givenName":"Joao",
+                "familyName":"Gouveia",
+                "gender":"Male",
+                "birthCountry":"Portugal",
+                "birthDate":"2000-07-17",
+                "isAbove18":true
+             }
+          },
+          "options":{
+             "proofType":"BbsBlsSignature2020"
+          }
+       }
+    },
+    "trace":true,
+    "verification_method":"string"
+ }
+
+
+
+ 

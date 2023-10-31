@@ -1,0 +1,13 @@
+{
+    "connection_id":"7cec8b4f-64b2-4bcc-8b6b-9afcd942e66a",
+    "role":"issuer",
+    "initiator":"external",
+    "auto_issue":true,
+    "auto_remove":true,
+    "thread_id":"d04c9a93-f788-4ea5-806b-28807cc1e843",
+    "state":"credential-issued",
+    "trace":true,
+    "created_at":"2023-09-30T18:30:15.908107Z",
+    "updated_at":"2023-09-30T18:30:40.490784Z",
+    "cred_ex_id":"e8cfcda2-4d2e-4c2b-a69e-f9eebc12ab0b"
+ }

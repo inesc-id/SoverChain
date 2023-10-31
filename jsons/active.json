@@ -1,0 +1,19 @@
+{
+    "state":"active",
+    "invitation_mode":"once",
+    "alias":"GovernamentInvitation",
+    "their_did":"FJb7pbhjRYFuCQCQyEkGjq",
+    "invitation_key":"2LaGkBRffHNiVqTfdgTmhoYdmAoCUSvaiCjmLmqHnBon",
+    "accept":"auto",
+    "routing_state":"none",
+    "request_id":"b65443d8-a97d-4a27-880b-108d3760a262",
+    "connection_protocol":"connections/1.0",
+    "connection_id":"733c48de-9f33-4b8a-91ba-87689bf907db",
+    "rfc23_state":"completed",
+    "their_role":"inviter",
+    "their_label":"Governament.Agent",
+    "created_at":"2023-09-27T17:45:51.147452Z",
+    "my_did":"3WaYZSgfLZHZUymaLyf9vY",
+    "updated_at":"2023-09-27T17:45:51.642045Z",
+    "invitation_msg_id":"7ab6348d-97ee-42be-a3b5-ed1d6a9f1b91"
+ }

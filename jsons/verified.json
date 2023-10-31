@@ -1,0 +1,55 @@
+{
+    "updated_at":"2023-10-01T16:07:23.448328Z",
+    "connection_id":"4b35fbb4-6b30-4e8e-81fd-09803c4097b6",
+    "role":"verifier",
+    "created_at":"2023-10-01T16:06:58.933706Z",
+    "auto_present":false,
+    "pres_request":{ // Presentation Request...
+    },
+    "initiator":"self",
+    "pres":{
+       "presentations~attach":[
+          {
+             "data":{
+                "json":{
+                   "@context":[ "https://www.w3.org/2018/credentials/v1","https://w3id.org/security/bbs/v1"
+                   ],
+                   "type":[ "VerifiablePresentation"
+                   ],
+                   "verifiableCredential":[
+                      {
+                         "type":[
+                            "PermanentResident",
+                            "VerifiableCredential"
+                         ],
+                         "credentialSubject":{
+                            "id":"did:key:zUC7LDAyMSQU45hsJ75xVkzLzmP3Mh3J5rCtZME4hBpp9Ec8dQvypf1zHT5ewxNMihky4zN5Pcin7wBfAmTKxunLU1cAmbcfWUNYugwAYRDbz1L4p63isjnBSc8SQWA9TJfMZZe",
+                            "isAbove18":"true",
+                            "familyName":"ANASTACIA",
+                            "givenName":"ANASTACIA"
+                         },
+                         "issuanceDate":"2020-01-01T12:00:00Z",
+                         "issuer":"did:key:zUC79E7awfTjPBnzzN8M55PrHFqPrNgrX56V979y2RSoUDQ2sfVXqujJiMVQga8HzW3VEPutLyRuCTWkMp4vSQwDBpgeBtzD75EwB8hic7dt8PLFPUSBbhZe4H2T1Xzz9cDcSZR",
+                      }
+                   ],
+                   "proof":{
+                      "type":"BbsBlsSignature2020",
+                      "verificationMethod":"did:key:zUC7LDAyMSQU45hsJ75xVkzLzmP3Mh3J5rCtZME4hBpp9Ec8dQvypf1zHT5ewxNMihky4zN5Pcin7wBfAmTKxunLU1cAmbcfWUNYugwAYRDbz1L4p63isjnBSc8SQWA9TJfMZZe#zUC7LDAyMSQU45hsJ75xVkzLzmP3Mh3J5rCtZME4hBpp9Ec8dQvypf1zHT5ewxNMihky4zN5Pcin7wBfAmTKxunLU1cAmbcfWUNYugwAYRDbz1L4p63isjnBSc8SQWA9TJfMZZe",
+                      "created":"2023-10-01T16:07:19.931718+00:00",
+                      "proofPurpose":"authentication",
+                      "challenge":"3fa85f64-5717-4562-b3fc-2c963f66afa7",
+                      "proofValue":"kAi6tvZW+K5a4eWR0TkLGhHMnqIVrXZyyBeuwbuzRMuEXh4EyPni2AmFZmJ+oCtjPo+FR9xg+wQkQ4IfZ4/lD+F2gB3LnNTmOfinDyglzNA7o4YNlGe/AWKyYwbHYPTbLAxTP3ry6Z8/N/Pq+2wEpA=="
+                   }
+                }
+             }
+          }
+       ]
+    },
+    "by_format":{ // Presentation Request format... 
+    },
+    "trace":false,
+    "pres_ex_id":"61831eba-2f9e-4f67-aeac-ee98665d9c8e",
+    "thread_id":"ed42f183-8cf3-4c08-af7d-0e6119b9c61f",
+    "state":"done",
+    "verified":"true"
+ }

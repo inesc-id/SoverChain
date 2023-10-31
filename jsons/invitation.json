@@ -1,0 +1,19 @@
+{
+    "@type":"did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/connections/1.0/invitation",
+    "@id":"d5bd5918-2128-4e05-a99b-240273f206a8",
+    "label":"Governament.Agent",
+    "serviceEndpoint":"http://localhost:9020",
+    "recipientKeys":[
+       "CZJufY6BBxT9jMj3jx6DuLGC5NyhCauZy4VQPqUNyMCt"
+    ]
+ }
+
+
+
+
+
+
+
+
+
+ 

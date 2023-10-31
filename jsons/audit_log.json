@@ -1,0 +1,7 @@
+    {
+    "event_type": "ReceivedCredential",
+    "credential_type": "Permanent Residence",
+    "subject_did": "did:key:zUC7LDAyMSQU45hsJ75xVkzLzmP3Mh3J5rCtZME4hBpp9Ec8dQvyp",
+    "third_party_did": "did:key:zUC79E7awfTjPBnzzN8M55PrHFqPrNgrX56V979y2R",
+    "timestamp": "2023-10-01T16:06:58"
+    }

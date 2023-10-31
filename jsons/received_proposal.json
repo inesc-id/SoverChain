@@ -1,0 +1,32 @@
+{
+    "@type":"did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/issue-credential/2.0/propose-credential",
+    "@id":"1b045131-fc0d-405c-9c98-a1960e5593a7",
+    "~trace":{
+       "target":"log",
+       "full_thread":true,
+       "trace_reports":[
+          
+       ]
+    },
+    "formats":[
+       {
+          "attach_id":"ld_proof",
+          "format":"aries/ld-proof-vc-detail@v1.0"
+       }
+    ],
+    "comment":"Credential proposal for identity documents: https://link.storjshare.io/s/jxaw75cuhqnoiywbsfv4smkzjzxq/ola/cc.png",
+    "filters~attach":[
+       {
+          "@id":"ld_proof",
+          "mime-type":"application/json",
+          "data":{
+             "base64":"eyJj..."
+          }
+       }
+    ]
+ }
+
+
+
+
+ 

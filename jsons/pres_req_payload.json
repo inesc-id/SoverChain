@@ -1,0 +1,44 @@
+{
+    "presentation_request": {
+        "dif": {
+            "options": { "..."
+            },
+            "presentation_definition": {
+                "id": "32f54163-7166-48f1-93d8-ff217bdb0654",
+                "format": { "..."
+                },
+                "input_descriptors": [
+                    {
+                        "id": "citizenship_input_1",
+                        "name": "Citizen Card",
+                        "schema": ["..."                       
+                        ],
+                        "constraints": {
+                            "limit_disclosure": "required",
+                            "is_holder": [ "..."
+                            ],
+                            "fields": [
+                                {
+                                    "path": ["$.credentialSubject.familyName" ],
+                                    "purpose": "Please provide your surname"
+                                },
+                                {
+                                    "path": ["$.credentialSubject.givenName"],
+                                    "purpose": "Please provide your first name",
+                                },
+                                {
+                                    "path": ["$.credentialSubject.isAbove18"],
+                                    "purpose": "Please provide a proof of being above 18",
+                                    "schema": [ { "uri": "https://example.com/definitions#isAbove18"}                                    
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+

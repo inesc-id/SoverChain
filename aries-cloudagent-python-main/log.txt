@@ -1,0 +1,25 @@
+Fetching genesis transactions from: http://localhost:9000/genesis
+Create profile manager: indy
+	src/commands/mod.rs:127 | Worker thread started
+Creating master secret...
+_indy_loop_callback: Function returned error 
+Master secret already exists
+	src/commands/pool.rs:75 | OpenAck handle 3, pool_id 3, result Ok(())
+	src/services/ledger/mod.rs:460 | build_get_acceptance_mechanisms_request() => Ok("{\"reqId\":1689889290710586233,\"identifier\":\"N1gEc98ZFg21DpPqTLvtXZ\",\"operation\":{\"type\":\"7\"},\"protocolVersion\":2}")
+	src/services/ledger/mod.rs:450 | build_get_txn_author_agreement_request() => Ok("{\"reqId\":1689889290727793087,\"identifier\":\"N1gEc98ZFg21DpPqTLvtXZ\",\"operation\":{\"type\":\"6\"},\"protocolVersion\":2}")
+	src/services/ledger/mod.rs:138 | build_get_attrib_request() => Ok("{\"reqId\":1689889290745736681,\"identifier\":\"N1gEc98ZFg21DpPqTLvtXZ\",\"operation\":{\"type\":\"104\",\"dest\":\"N1gEc98ZFg21DpPqTLvtXZ\",\"raw\":\"endpoint\"},\"protocolVersion\":2}")
+Existing acapy_version storage record found, version set to v0.8.1
+Version v0.8.1 to upgrade from and current version to upgrade to v0.8.1 are same. You can apply upgrade from a lower version by running the upgrade command with --from-version [< v0.8.1] and --force-upgrade
+_indy_loop_callback: Function returned error 
+	src/services/pool/pool.rs:754 | Drop started
+	src/services/pool/pool.rs:762 | Drop wait worker
+	src/services/pool/pool.rs:765 | Drop finished
+127.0.0.1 [20/Jul/2023:21:42:25 +0000] "POST / HTTP/1.1" 200 149 "-" "Python/3.8 aiohttp/3.8.4"
+Received v2.0 presentation request message: {"@type":"did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/present-proof/2.0/request-presentation","@id":"c2abacde-fa27-486d-9ff4-7a14cb1153c9","will_confirm":true,"formats":[{"attach_id":"dif","format":"dif/presentation-exchange/definitions@v1.0"}],"comment":"string","request_presentations~attach":[{"@id":"dif","mime-type":"application/json","data":{"json":{"options":{"challenge":"3fa85f64-5717-4562-b3fc-2c963f66afa7","domain":"4jt78h47fh47"},"presentation_definition":{"id":"32f54163-7166-48f1-93d8-ff217bdb0654","format":{"ldp_vp":{"proof_type":["BbsBlsSignature2020"]}},"input_descriptors":[{"id":"citizenship_input_1","name":"Citizen Card","schema":[{"uri":"https://www.w3.org/2018/credentials#VerifiableCredential"},{"uri":"https://w3id.org/citizenship#PermanentResident"}],"constraints":{"limit_disclosure":"required","is_holder":[{"directive":"required","field_id":[]}],"fields":[{"path":["$.credentialSubject.familyName"],"purpose":"Please provide your surname"},{"path":["$.credentialSubject.givenName"],"purpose":"Please provide your first name"},{"path":["$.credentialSubject.isAbove18"],"purpose":"Please provide a proof of being above 18","schema":[{"uri":"https://example.com/definitions#isAbove18"}]}]}}]}}}}]}
+127.0.0.1 [20/Jul/2023:21:42:25 +0000] "GET /present-proof-2.0/records/a4521644-1e5a-4968-82f0-4dcba78971ff HTTP/1.1" 200 2776 "-" "python-requests/2.31.0"
+Indy wallet search was not closed manually
+127.0.0.1 [20/Jul/2023:21:42:35 +0000] "GET /present-proof-2.0/records/a4521644-1e5a-4968-82f0-4dcba78971ff/credentials?count=30 HTTP/1.1" 200 50928 "-" "python-requests/2.31.0"
+Indy wallet search was not closed manually
+127.0.0.1 [20/Jul/2023:21:43:10 +0000] "POST /present-proof-2.0/records/a4521644-1e5a-4968-82f0-4dcba78971ff/send-presentation HTTP/1.1" 200 9503 "-" "python-requests/2.31.0"
+127.0.0.1 [20/Jul/2023:21:43:17 +0000] "POST / HTTP/1.1" 200 149 "-" "Python/3.8 aiohttp/3.8.4"
+Received v2.0 presentation ack message: {"@type":"did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/present-proof/2.0/ack","@id":"acd5f15c-55c7-49d4-b9a1-d211b800a5e2","~thread":{"thid":"c2abacde-fa27-486d-9ff4-7a14cb1153c9"},"status":"OK"}

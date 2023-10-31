@@ -1,0 +1,60 @@
+# To be installed in each virtual machine, google clouds
+sudo apt-get install git
+sudo apt update
+sudo apt install docker.io
+sudo apt install python3-pip
+pip3 install flask
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CE7709D068DB5E88
+sudo apt install software-properties-common
+sudo apt-add-repository "deb https://repo.sovrin.org/sdk/deb bionic master" -y
+sudo apt-get update
+sudo apt-get install -y indy-cli
+
+pip3 install cryptography
+pip3 install python3-indy
+pip3 install aries-cloudagent
+pip install ursa-bbs-signatures
+
+
+
+# SoverChain Prototype
+
+In this work, it is proposed SoverChain, Self-sovereign identity (SSI) management system, to give ownership and control of identity back to the users and prevent abuses of system providers. SoverChain aims to consolidate the most desirable characteristics of existing SSI systems while introducing novel enhancements to further improve upon these systems. Our approach builds on specific technologies to provide transparency, availability, security, privacy, interoperability and decentralization by leveraging: blockchain technology for the creation of digital identities and storage of audit logs, Storj as a decentralized file storage system to securely store users' identity documents, and the employment of Hyperledger projects such as Indy, Ursa, and Aries, which provide a toolkit for management of verifiable digital credentials.
+
+
+# SETUP
+Clone the SoverChain repository:
+
+```
+git clone ola.com
+```
+
+Install Indy-SDK:
+```
+cd indy-sdk-main
+pip install python3-indy
+```
+
+Start local Indy Ledger with VonNetwork:
+```
+cd von-network
+sudo ./manage build
+sudo ./manage start
+```
+
+Other used commands:
+Used for Ursa signature bss+:
+```
+sudo apt-get install cmake libffi-dev 
+```
+
+# Start Application
+
+Start User, Governament and Broker:
+```
+cd project
+python3 user.py
+python3 governament.py
+python3 broker.py
+```

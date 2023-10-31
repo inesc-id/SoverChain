@@ -1,0 +1,16 @@
+{
+    "rfc23_state":"completed",
+    "updated_at":"2023-09-27T17:45:51.462317Z",
+    "connection_protocol":"connections/1.0",
+    "connection_id":"d0509995-003c-457c-bdce-2520c30d6de1",
+    "their_label":"user.Agent",
+    "accept":"auto",
+    "their_did":"3WaYZSgfLZHZUymaLyf9vY",
+    "invitation_key":"2LaGkBRffHNiVqTfdgTmhoYdmAoCUSvaiCjmLmqHnBon",
+    "invitation_mode":"once",
+    "state":"active",
+    "their_role":"invitee",
+    "my_did":"FJb7pbhjRYFuCQCQyEkGjq",
+    "created_at":"2023-09-27T17:45:24.951059Z",
+    "routing_state":"none"
+ }

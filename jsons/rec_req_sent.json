@@ -1,0 +1,14 @@
+{
+    "connection_id":"1a5e29de-6f20-4837-bfb7-7d85cc08ac66",
+    "role":"holder",
+    "initiator":"self",
+    "auto_offer":false,
+    "auto_issue":false,
+    "auto_remove":true,
+    "thread_id":"d04c9a93-f788-4ea5-806b-28807cc1e843",
+    "state":"request-sent",
+    "trace":true,
+    "created_at":"2023-09-30T18:30:15.867929Z",
+    "updated_at":"2023-09-30T18:30:40.416827Z",
+    "cred_ex_id":"c4fdb224-7373-47bb-81b8-c71e88c6b1a3"
+ }

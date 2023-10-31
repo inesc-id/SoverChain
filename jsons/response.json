@@ -1,0 +1,16 @@
+{
+    "their_role":"invitee",
+    "connection_id":"7f6a0786-227e-42c4-bddb-260669bba244",
+    "accept":"auto",
+    "created_at":"2023-09-23T18:10:31.081606Z",
+    "my_did":"21NxDwZfafTmpgdDZ2vRVD",
+    "state":"response",
+    "their_did":"6v2BKtEkHfQ8peFB3eZDcA",
+    "rfc23_state":"response-sent",
+    "invitation_mode":"once",
+    "invitation_key":"CZJufY6BBxT9jMj3jx6DuLGC5NyhCauZy4VQPqUNyMCt",
+    "updated_at":"2023-09-23T19:00:37.770009Z",
+    "connection_protocol":"connections/1.0",
+    "routing_state":"none",
+    "their_label":"user.Agent"
+ }

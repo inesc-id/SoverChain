@@ -1,0 +1,43 @@
+# To be installed in each virtual machine, google clouds
+sudo apt-get install git
+git clone https://github.com/inesc-id/SoverChainPrototype.git
+sudo apt update
+sudo apt install docker.io
+sudo apt install python3-pip
+pip3 install cryptography
+pip3 install flask
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CE7709D068DB5E88
+sudo apt install software-properties-common
+sudo apt-add-repository "deb https://repo.sovrin.org/sdk/deb bionic master" -y
+sudo apt-get update
+sudo apt-get install -y indy-cli
+
+pip3 install python3-indy
+pip3 install aries-cloudagent
+pip install ursa-bbs-signatures
+
+#-----------------------------------------
+locust -f my_locust_file.py
+
+access the interface of locust
+http://34.90.198.19:8089/
+http://334.22.230.49:8089/
+
+Run with the port of user weebhook
+http://10.154.0.2:8006
+http://10.132.0.3:8026
+#-----------------------------------------
+
+Issuer agent
+aca-py start --inbound-transport http 0.0.0.0 9020 --outbound-transport http --admin-insecure-mode --admin 0.0.0.0 9021 --seed 000000000000000000000000Steward1 --trace-target log --trace-tag acapy.events --log-level info --replace-public-did --wallet-type indy --genesis-url http://10.128.0.3:9000/genesis --webhook-url http://10.128.0.2:9002/webhooks --auto-provision --wallet-name theGovernament_wallet --wallet-key theGovernament_wallet_key --auto-respond-credential-proposal --auto-accept-invites --auto-accept-requests --auto-ping-connection --auto-respond-credential-request --label Governament.Agent -e http://10.128.0.3:9020 --debug-connection --debug-credentials
+
+User agent
+aca-py start --inbound-transport http 0.0.0.0 8002 --outbound-transport http --admin-insecure-mode --admin 0.0.0.0 8003 --seed 000000000000000000000000Steward2 --auto-provision --wallet-type indy --genesis-url http://10.128.0.3:9000/genesis --webhook-url http://10.154.0.2:8006/webhooks --replace-public-did --wallet-name user_wallet --wallet-key user_wallet_key --log-level info --auto-accept-invites --auto-accept-requests --auto-store-credential --auto-ping-connection --auto-respond-credential-offer --trace-target log --trace-tag acapy.events --label user.Agent -e http://10.154.0.3:8002 --debug-connection --debug-presentations --debug-credentials
+
+
+Broker agent
+aca-py start --inbound-transport http 0.0.0.0 8010 --seed 000000000000000000000000Steward3 --outbound-transport http --admin-insecure-mode --admin 0.0.0.0 8011 --wallet-type indy --genesis-url http://10.128.0.3:9000/genesis --webhook-url http://10.132.0.3:8016/webhooks --replace-public-did --auto-provision --wallet-name broker_wallet --wallet-key broker_wallet_key --log-level info --auto-accept-invites --auto-accept-requests --auto-store-credential --auto-ping-connection --auto-respond-credential-offer --trace-target log --trace-tag acapy.events --label broker.Agent -e http://10.132.0.2:8010 --debug-connection --debug-credentials
+
+User agent 2
+aca-py start --inbound-transport http 0.0.0.0 8022 --outbound-transport http --admin-insecure-mode --admin 0.0.0.0 8023 --seed 000000000000000000000000Steward4 --auto-provision --wallet-type indy --genesis-url http://10.128.0.3:9000/genesis --webhook-url http://10.132.0.3:8026/webhooks --replace-public-did --wallet-name user2_wallet --wallet-key user2_wallet_key --log-level info --auto-accept-invites --auto-accept-requests --auto-store-credential --auto-ping-connection --auto-respond-credential-offer --trace-target log --trace-tag acapy.events --label user2.Agent -e http://10.132.0.2:8022 --debug-connection --debug-presentations --debug-credentials

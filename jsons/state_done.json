@@ -1,0 +1,12 @@
+{
+    "connection_id":"adedb758-bad7-4dcb-a0f2-12c50a03ac29",
+    "role":"prover",
+    "initiator":"external",
+    "auto_verify":false,
+    "thread_id":"ed42f183-8cf3-4c08-af7d-0e6119b9c61f",
+    "state":"done",
+    "trace":false,
+    "created_at":"2023-10-01T16:06:59.225485Z",
+    "updated_at":"2023-10-01T16:07:23.498113Z",
+    "pres_ex_id":"8488d43a-44aa-4f4b-9742-ddcbc3b7d3ae"
+ }

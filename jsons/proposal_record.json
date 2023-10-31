@@ -1,0 +1,13 @@
+{
+    "connection_id":"7cec8b4f-64b2-4bcc-8b6b-9afcd942e66a",
+    "role":"issuer",
+    "initiator":"external",
+    "auto_issue":true,
+    "auto_remove":true,
+    "thread_id":"1b045131-fc0d-405c-9c98-a1960e5593a7",
+    "state":"proposal-received",
+    "trace":true,
+    "created_at":"2023-09-30T17:50:20.885022Z",
+    "updated_at":"2023-09-30T17:50:20.885022Z",
+    "cred_ex_id":"eee4e707-0d95-414d-9929-f370677db8c6"
+ }

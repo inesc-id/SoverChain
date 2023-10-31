@@ -1,0 +1,37 @@
+{
+    "cred_ex_record":{
+       "created_at":"2023-09-30T18:04:41.199514Z",
+       "thread_id":"240ada68-4773-4f5a-ac48-9968a67f7e96",
+       "state":"proposal-received",
+       "cred_proposal":{
+          "@type":"did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/issue-credential/2.0/propose-credential",
+          "@id":"240ada68-4773-4f5a-ac48-9968a67f7e96",
+          "~trace":[ "..."
+          ],
+          "formats":[ "..."           
+          ],
+          "comment":"Credential proposal for identity documents: https://link.storjshare.io/s/jxaw75cuhqnoiywbsfv4smkzjzxq/ola/cc.png",
+          "filters~attach":[ "..."
+          ]
+       },
+       "updated_at":"2023-09-30T18:04:41.199514Z",
+       "trace":true,
+       "by_format":{
+          "cred_proposal":{ // The user proposed credential comes HERE
+          }
+       },
+       "connection_id":"7cec8b4f-64b2-4bcc-8b6b-9afcd942e66a",
+       "role":"issuer",
+       "cred_ex_id":"92cd2f35-8cf8-4b31-84d1-c810c0d37ecb",
+       "initiator":"external",
+       "auto_remove":true,
+       "auto_issue":true
+    },
+    "indy":null,
+    "ld_proof":null
+ }
+
+
+
+
+ 
